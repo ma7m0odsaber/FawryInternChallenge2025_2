@@ -1,0 +1,45 @@
+Added book with ISBN: P123
+Added book with ISBN: E456
+Added book with ISBN: S789
+Initial Inventory:
+PaperBook - ISBN: P123  Title: C++ Basics       Author: Mahmoud Year: 2015      Price: $30.000000       Stock: 10
+EBook - ISBN: E456      Title: Learn AI Author: Mohamed Year: 2021      Price: $15.000000       FileType: PDF
+ShowcaseBook - ISBN: S789       Title: Ancient Code     Author: Ali     Year: 2000 (Not for sale)
+=======================================================================================================
+
+Buying Paper Book:
+PaperBook bought: P123  Quantity: 2     Amount Paid: $60.000000
+Shipping to address: 123 Minia
+
+Failing to Buy Paper Book (OUT OF STOCK):
+PaperBook: P123 Requested: 10   Available:8
+Error: Not enough stock available!
+
+Failing to Buy Paper Book (NO MATCHING ISBN):
+There is no book with ISBN = M123 in the inventory
+Error: Book not available or not sellable.
+=======================================================================================================
+
+Buying EBook:
+EBook bought: E456      Amount Paid: $15.000000
+Sending to email: reader@mail.com
+
+Failing to Buy EBook (CAN NOT BUY MORE THAN ONE FOR THE SAME EMAIL):
+Error: You can only buy 1 copy of an EBook.
+
+Failing to Buy EBook (NO MATCHING ISBN):
+There is no book with ISBN = R456 in the inventory
+Error: Book not available or not sellable.
+=======================================================================================================
+
+Buying Showcase Book:
+Error: Book not available or not sellable.
+=======================================================================================================
+
+Removing outdated books (threshold: 10 years)
+Removing outdated book: P123
+Removing outdated book: S789
+=======================================================================================================
+
+Final Inventory:
+EBook - ISBN: E456      Title: Learn AI Author: Mohamed Year: 2021      Price: $15.000000       FileType: PDF
